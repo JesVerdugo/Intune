@@ -1,0 +1,15 @@
+-OSD Cloud Workflow
+install ADK
+install ADK WPE addon
+
+Install-Module OSD -Force
+New-OSDCloudTemplate
+New-OSDCloudTemplate -Name WinRE -WinRE
+new-OSDCloudWorkspace
+Edit-OSDCloudWinPE
+Edit-OSDCloudWinPE -UseDefaultWallpaper
+Edit-OSDCloudWinPE -CloudDriver *
+Edit-OSDCloudWinPE -PSModuleCopy OSD
+Edit-OSDCloudWinPE -StartOSDCloudGUI
+New-OSDCloudUSB
+Update-OSDCloudUSB -OS
