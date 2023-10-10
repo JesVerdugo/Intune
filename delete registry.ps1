@@ -1,0 +1,1 @@
+﻿Get-ChildItem -Path HKLM:\SYSTEM\CurrentControlSet\Services\bomgar-ps* | Remove-Item
